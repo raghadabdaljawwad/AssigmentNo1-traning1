@@ -1,0 +1,140 @@
+body {
+  font-family: 'Tahoma', Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fffaf0;
+  color: #222;
+}
+
+
+header, footer {
+  background-color: #663300;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 10px 0;
+}
+
+nav li {
+  margin: 8px 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: #fff;
+  color: #663300;
+}
+
+
+main {
+  padding: 30px;
+  max-width: 850px;
+  margin: auto;
+}
+
+section h2 {
+  color: #663300;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.return-img {
+  width: 100%;
+  max-width: 200px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+article {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 8px rgba(102, 51, 0, 0.2);
+  border: 1px solid #663300;
+}
+
+article h3 {
+  margin-top: 0;
+  color: #4d2600;
+}
+
+
+.return-form {
+  background-color: #fff8e6;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(102, 51, 0, 0.2);
+  margin-top: 30px;
+  border: 2px solid #663300;
+}
+
+.return-form h3 {
+  text-align: center;
+  color: #663300;
+}
+
+.return-form label {
+  display: block;
+  margin: 12px 0 5px;
+}
+
+.return-form input,
+.return-form select,
+.return-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.return-form button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #663300;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.return-form button:hover {
+  background-color: #4d2600;
+}
+
+footer {
+  margin-top: 40px;
+}
+
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+}

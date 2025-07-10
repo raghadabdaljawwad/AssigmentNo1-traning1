@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Return Policy</title>
+  <link rel="stylesheet" href="css/return.css" />
+</head>
+<body>
+  <header>
+    <h1>Return Policy</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="album.html">Album</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="return.html" class="active">Return Policy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Our Return Philosophy</h2>
+      <p class="intro-text">
+        We care about your experience. If something doesn't meet your expectations, we're here to make it right — simply and smoothly.
+      </p>
+
+      <div class="about-cards">
+        <article style="border: 2px solid #00334d;">
+          <h3>
+            <span class="material-icons" style="vertical-align: middle;">autorenew</span>
+            Easy Returns
+          </h3>
+          <p>
+            Not satisfied with your order? No worries. We allow returns within 30 days of delivery, as long as items are in their original condition.
+          </p>
+        </article>
+
+        <article style="border: 2px solid #00334d;">
+          <h3>
+            <span class="material-icons" style="vertical-align: middle;">support_agent</span>
+            Supportive Process
+          </h3>
+          <p>
+            Our team is always ready to help. Just reach out with your order number and the reason, and we’ll guide you through the process.
+          </p>
+        </article>
+
+        <article style="border: 2px solid #00334d;">
+          <h3>
+            <span class="material-icons" style="vertical-align: middle;">payments</span>
+            Hassle-Free Refunds
+          </h3>
+          <p>
+            Once we receive your returned item, we process your refund within 7 business days — quick, transparent, and fair.
+          </p>
+        </article>
+      </div>
+
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+      <form class="return-form" action="#" method="post">
+        <h3>Submit Your Return Request</h3>
+
+        <label for="order">Order Number:</label>
+        <input style="font-size: 15px; width: 750px;" type="text" id="order" name="order" placeholder="Your order number" required />
+
+        <label for="reason">Reason for Return:</label>
+        <select style="font-size: 15px; width: 780px;" id="reason" name="reason" required>
+          <option value="">-- Choose a reason --</option>
+          <option value="damaged">Item arrived damaged</option>
+          <option value="wrong">Received the wrong item</option>
+          <option value="not_satisfied">Not satisfied</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="details">Tell Us More:</label>
+        <textarea style="font-size: 15px; width: 750px;" id="details" name="details" rows="4" placeholder="Your message..."></textarea>
+
+        <button type="submit">Send Request</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Website. All rights reserved.</p>
+  </footer>
+</body>
+</html>
