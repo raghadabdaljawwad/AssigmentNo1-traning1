@@ -1,0 +1,51 @@
+body {
+  background-color: #f4f6f8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.custom-header, .custom-footer {
+  background-color: #0d47a1;
+  color: white;
+}
+
+.nav-link {
+  color: white !important;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background-color: white !important;
+  color: #0d47a1 !important;
+  border-radius: 4px;
+}
+
+.card {
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.card-footer {
+  background-color: #f8f8f8;
+  font-weight: bold;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 10px;
+}
+ html {
+      scroll-behavior: smooth;
+    }
+
+   
+    .card-footer .btn {
+      width: 100%;
+    }

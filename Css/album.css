@@ -1,0 +1,86 @@
+:root {
+  --purple-color: #6a1b9a;
+}
+
+.bg-purple {
+  background-color: var(--purple-color) !important;
+}
+
+.text-purple {
+  color: var(--purple-color) !important;
+}
+
+.border-purple {
+  border-color: var(--purple-color) !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+
+.img-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(106, 27, 154, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+ html {
+      scroll-behavior: smooth;
+    }
+
+  
+    .bg-purple {
+      background-color: #6f42c1;
+    }
+
+    .text-purple {
+      color: #6f42c1;
+    }
+
+    .img-card {
+      cursor: pointer;
+      border: 3px solid #6f42c1;
+      border-radius: 0.5rem;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      position: relative;
+    }
+    .img-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px #6f42c1;
+      z-index: 5;
+    }
+
+    .img-card img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 0.5rem 0.5rem 0 0;
+    }
+
+  
+    .modal-img {
+      width: 100%;
+      height: auto;
+      border-radius: 0.5rem;
+    }
+
+   
+    .modal-content {
+      background-color: #fff;
+      border-radius: 0.5rem;
+      padding: 1rem;
+    }
+
+  
+    .navbar-brand {
+      color: #fff !important;
+      font-weight: 700;
+      font-family: 'Poppins', sans-serif;
+    }
+
+ 
+    footer {
+      background-color: #6f42c1;
+      color: #fff;
+    }

@@ -1,0 +1,63 @@
+ body {
+      background-color: #f4f4f4;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+    }
+
+    .navbar {
+      background-color: #006666 !important;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar .nav-link.active {
+      background-color: #ffffff !important;
+      color: #006666 !important;
+    }
+
+    .header-section {
+      background-color: #006666;
+      color: white;
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    .header-section h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    .card-custom {
+      border: none;
+      border-left: 5px solid #006666;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .card-custom:hover {
+      transform: translateY(-5px);
+    }
+
+    .form-section {
+      background-color: white;
+      border-left: 5px solid #006666;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    footer {
+      background-color: #006666;
+      color: white;
+    }
+
+    .form-control:focus {
+      border-color: #006666;
+      box-shadow: 0 0 0 0.2rem rgba(0,102,102,0.25);
+    }
+
+    .btn-custom {
+      background-color: #006666;
+      border: none;
+    }
+
+    .btn-custom:hover {
+      background-color: #004d4d;
+    }

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Photo Album</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/album.css" />
+  
+</head>
+<body class="d-flex flex-column min-vh-100 bg-light">
+
+ 
+  <header class="text-white shadow-sm bg-purple sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark container">
+      <a class="navbar-brand fw-bold" href="index.html">Album</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link active bg-white text-primary rounded px-3" href="album.html" style="font-weight: 600;">Album</a></li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">More</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="privacy.html">Privacy Policy</a></li>
+              <li><a class="dropdown-item" href="return.html">Return & Policy</a></li>
+              <li><a class="dropdown-item" href="terms.html">Terms & Conditions</a></li>
+              <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+  <main class="container my-5">
+    <h2 class="text-center mb-4 fw-bold text-purple">Gallery</h2>
+    <div class="row g-4 justify-content-center">
+
+     
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <a href="#imgModal1" data-bs-toggle="modal" class="img-card shadow-sm">
+          <img src="images/shoping.png" alt="Photo 1" />
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <a href="#imgModal2" data-bs-toggle="modal" class="img-card shadow-sm">
+          <img src="images/ui_ux.png" alt="Photo 2" />
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <a href="#imgModal3" data-bs-toggle="modal" class="img-card shadow-sm">
+          <img src="images/seo.png" alt="Photo 3" />
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <a href="#imgModal4" data-bs-toggle="modal" class="img-card shadow-sm">
+          <img src="images/ecommerice.png" alt="Photo 4" />
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <a href="#imgModal5" data-bs-toggle="modal" class="img-card shadow-sm">
+          <img src="images/mantinance.png" alt="Photo 5" />
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <a href="#imgModal6" data-bs-toggle="modal" class="img-card shadow-sm">
+          <img src="images/logo.png" alt="Photo 6" />
+        </a>
+      </div>
+    </div>
+  </main>
+
+ 
+  <div class="modal fade" id="imgModal1" tabindex="-1" aria-labelledby="imgModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content p-3">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/shoping.png" alt="Photo 1" class="modal-img" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="imgModal2" tabindex="-1" aria-labelledby="imgModal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content p-3">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/ui_ux.png" alt="Photo 2" class="modal-img" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="imgModal3" tabindex="-1" aria-labelledby="imgModal3Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content p-3">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/seo.png" alt="Photo 3" class="modal-img" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="imgModal4" tabindex="-1" aria-labelledby="imgModal4Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content p-3">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/ecommerice.png" alt="Photo 4" class="modal-img" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="imgModal5" tabindex="-1" aria-labelledby="imgModal5Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content p-3">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/mantinance.png" alt="Photo 5" class="modal-img" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="imgModal6" tabindex="-1" aria-labelledby="imgModal6Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content p-3">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/logo.png" alt="Photo 6" class="modal-img" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="text-white text-center py-3 mt-auto bg-purple">
+    <p class="mb-0">&copy; 2025 My Website</p>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

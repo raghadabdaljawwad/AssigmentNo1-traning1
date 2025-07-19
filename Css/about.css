@@ -1,0 +1,39 @@
+ body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9fbfd;
+    }
+
+    .navbar {
+      background-color: #2e7d32;
+    }
+
+    .navbar .nav-link {
+      color: white !important;
+      transition: 0.3s;
+    }
+
+    .navbar .nav-link:hover,
+    .navbar .nav-link.active {
+      background-color: white;
+      color: #2e7d32 !important;
+      border-radius: 5px;
+    }
+
+    .hero-title {
+      color: #2e7d32;
+      font-weight: 700;
+    }
+
+    .section-title {
+      color: #2e7d32;
+      font-weight: 600;
+    }
+
+    .card-title i {
+      color: #2e7d32;
+    }
+
+    footer {
+      background-color: #2e7d32;
+      color: white;
+    }

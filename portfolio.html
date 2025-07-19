@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="Css/portfolio.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+ 
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  
+
+
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#"><i class="bi bi-briefcase-fill me-2"></i>Our Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
+              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link active" href="portfolio.html">Portfolio</a></li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">More</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="album.html">Album</a></li>
+              <li><a class="dropdown-item" href="privacy.html">Privacy Policy</a></li>
+              <li><a class="dropdown-item" href="return.html">Return & Policy</a></li>
+              <li><a class="dropdown-item" href="terms.html">Terms & Conditions</a></li>
+              <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+ 
+  <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/project1.jpg" class="d-block w-100" alt="Project 1" style="height: 400px; object-fit: cover;">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Website Redesign</h5>
+          <p>Modern responsive UI with clean layout</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/project2.jpg" class="d-block w-100" alt="Project 2" style="height: 400px; object-fit: cover;">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>E-Commerce Platform</h5>
+          <p>Secure and smooth shopping experience</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  
+  <main class="container my-5 flex-grow-1">
+    <section>
+      <h2 class="text-center text-dark mb-5">Our Latest Projects</h2>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+        <div class="col" data-aos="fade-up" data-aos-delay="100">
+          <div class="card h-100 shadow-sm">
+            <img src="images/project1.jpg" class="card-img-top" alt="Project 1">
+            <div class="card-body text-center">
+              <h5 class="card-title">Project One - Redesign</h5>
+              <a href="#" class="btn btn-outline-dark mt-3">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-aos="fade-up" data-aos-delay="200">
+          <div class="card h-100 shadow-sm">
+            <img src="images/project2.jpg" class="card-img-top" alt="Project 2">
+            <div class="card-body text-center">
+              <h5 class="card-title">Project Two - E-commerce</h5>
+              <a href="#" class="btn btn-outline-dark mt-3">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-aos="fade-up" data-aos-delay="300">
+          <div class="card h-100 shadow-sm">
+            <img src="images/project3.jpg" class="card-img-top" alt="Project 3">
+            <div class="card-body text-center">
+              <h5 class="card-title">Project Three - App UI</h5>
+              <a href="#" class="btn btn-outline-dark mt-3">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-aos="fade-up" data-aos-delay="400">
+          <div class="card h-100 shadow-sm">
+            <img src="images/project4.jpg" class="card-img-top" alt="Project 4">
+            <div class="card-body text-center">
+              <h5 class="card-title">Project Four - Branding</h5>
+              <a href="#" class="btn btn-outline-dark mt-3">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  
+  <footer class="custom-footer text-center py-3 mt-auto bg-dark text-white">
+    <p class="mb-0">&copy; 2025 MyCompany. All rights reserved.</p>
+  </footer>
+
+ 
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+ 
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  </script>
+
+</body>
+</html>
