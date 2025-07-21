@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Compare Values</title>
+</head>
+<body>
+
+<script>
+  function compareValues(value1, value2) {
+    console.log("Loose equality (==):", value1 == value2);
+    console.log("Strict equality (===):", value1 === value2);
+  }
+
+  compareValues(5, "5");      
+  compareValues(0, false);   
+  compareValues(null, undefined); 
+  compareValues(10, 10);    
+</script>
+
+</body>
+</html>

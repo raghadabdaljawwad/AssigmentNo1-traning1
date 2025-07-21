@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Discount Calculation</title>
+</head>
+<body>
+
+<script>
+  let text = 'I love JavaScript so much';
+
+
+  let substring = text.substring(7, 19);
+  console.log(substring); 
+
+ 
+  let price = 200,
+    discount = 30,
+    employeeName = 'Ali',
+    specialEmployee = ['Ahmed', 'Ali', 'Amr', 'Osama'],
+    oldEmployee = true,
+    hasCapon = true;
+
+
+  let isSpecial = specialEmployee.includes(employeeName);
+
+  if (isSpecial) {
+  
+    discount += 20; 
+   
+    discount += 40; 
+  } else if (oldEmployee || hasCapon) {
+
+   
+  } else {
+  
+    price -= 10;
+    discount = 0;
+  }
+
+  let finalPrice = price - (price * discount) / 100;
+
+  console.log("Final price:", finalPrice);
+</script>
+
+</body>
+</html>

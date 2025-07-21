@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Days of the Week - Switch</title>
+</head>
+<body>
+
+<script>
+  function getDayName(dayNumber) {
+    let dayName;
+    switch (dayNumber) {
+      case 1:
+        dayName = "Sunday";
+        break;
+      case 2:
+        dayName = "Monday";
+        break;
+      case 3:
+        dayName = "Tuesday";
+        break;
+      case 4:
+        dayName = "Wednesday";
+        break;
+      case 5:
+        dayName = "Thursday";
+        break;
+      case 6:
+        dayName = "Friday";
+        break;
+      case 7:
+        dayName = "Saturday";
+        break;
+      default:
+        dayName = "Invalid day number";
+    }
+    return dayName;
+  }
+
+  
+  console.log(getDayName(1)); 
+  console.log(getDayName(4)); 
+  console.log(getDayName(7)); 
+  console.log(getDayName(9)); 
+</script>
+
+</body>
+</html>
