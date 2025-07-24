@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Our Services | MyCompany</title>
+
+  <!-- Tailwind CSS CDN -->
+  <link href="./style/output.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- Material Icons (for icons) -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    .service-icon {
+      font-size: 3rem;
+      color: #F59E0B; /* amber-500 */
+    }
+  </style>
+</head>
+<body class="flex flex-col min-h-screen bg-gray-50 text-gray-900">
+
+  <!-- Navbar -->
+  <nav class="bg-amber-400 sticky top-0 shadow-md">
+    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="index.html" class="font-bold text-xl text-gray-900 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-700">MyWebsite</a>
+      
+      <button id="menu-btn" aria-expanded="false" aria-controls="menu" class="lg:hidden focus:outline-none focus:ring-2 focus:ring-gray-700" aria-label="Toggle menu">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+
+      <ul id="menu" class="hidden lg:flex space-x-8 font-semibold text-gray-900">
+        <li><a href="index.html" class="hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-700">Home</a></li>
+        <li><a href="about.html" class="hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-700">About</a></li>
+        <li><a href="contact.html" class="hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-700">Contact</a></li>
+        <li><a href="services.html" class="text-gray-800 underline underline-offset-4 font-extrabold" aria-current="page">Services</a></li>
+       <li class="relative">
+  <button id="desktop-dropdown-toggle" aria-haspopup="true" aria-expanded="false"
+          class="flex items-center hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-700">
+    More
+    <svg class="ml-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 11.292l3.71-4.06a.75.75 0 0 1 1.08 1.04l-4.25 4.65a.75.75 0 0 1-1.08 0l-4.25-4.65a.75.75 0 0 1 .02-1.06z" clip-rule="evenodd"/></svg>
+  </button>
+  <ul id="desktop-dropdown-menu"
+      class="absolute hidden left-0 mt-2 w-48 bg-white rounded-md shadow-lg z-20 text-gray-800">
+    <li><a href="portfolio.html" class="block px-4 py-2 hover:bg-amber-100">Portfolio</a></li>
+  </ul>
+</li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="lg:hidden hidden bg-amber-400 text-gray-900">
+    <ul class="flex flex-col space-y-2 p-4 font-semibold">
+      <li><a href="index.html" class="block hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-700">Home</a></li>
+      <li><a href="about.html" class="block hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-700">About</a></li>
+      <li><a href="contact.html" class="block hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-700">Contact</a></li>
+      <li><a href="services.html" class="block underline underline-offset-4 font-extrabold text-gray-900" aria-current="page">Services</a></li>
+      <li><details>
+        <summary class="cursor-pointer hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-700">More</summary>
+        <ul class="mt-2 pl-4 space-y-1 text-gray-900">
+          <li><a href="portfolio.html" class="block hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-700">Portfolio</a></li>
+         
+        </ul>
+      </details></li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 my-10 flex-grow">
+    <h2 class="text-center mb-8 text-amber-500 font-bold text-3xl">What We Offer</h2>
+    <div class="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      
+      <article class="bg-white border-2 border-amber-400 rounded-lg shadow-md p-6 text-center flex flex-col items-center">
+        <span class="material-icons service-icon">language</span>
+        <h3 class="mt-4 text-xl font-semibold">Web Design</h3>
+        <p class="mt-2 text-gray-600">Beautiful and responsive designs tailored to your brand.</p>
+      </article>
+
+      <article class="bg-white border-2 border-amber-400 rounded-lg shadow-md p-6 text-center flex flex-col items-center">
+        <span class="material-icons service-icon">computer</span>
+        <h3 class="mt-4 text-xl font-semibold">Web Development</h3>
+        <p class="mt-2 text-gray-600">Functional websites using the latest technologies.</p>
+      </article>
+
+      <article class="bg-white border-2 border-amber-400 rounded-lg shadow-md p-6 text-center flex flex-col items-center">
+        <span class="material-icons service-icon">search</span>
+        <h3 class="mt-4 text-xl font-semibold">SEO Optimization</h3>
+        <p class="mt-2 text-gray-600">Improve your website's visibility in search engines.</p>
+      </article>
+
+      <article class="bg-white border-2 border-amber-400 rounded-lg shadow-md p-6 text-center flex flex-col items-center">
+        <span class="material-icons service-icon">shopping_cart</span>
+        <h3 class="mt-4 text-xl font-semibold">E-commerce Solutions</h3>
+        <p class="mt-2 text-gray-600">Complete online store setup and support.</p>
+      </article>
+
+      <article class="bg-white border-2 border-amber-400 rounded-lg shadow-md p-6 text-center flex flex-col items-center">
+        <span class="material-icons service-icon">build</span>
+        <h3 class="mt-4 text-xl font-semibold">Maintenance & Support</h3>
+        <p class="mt-2 text-gray-600">Ongoing care to ensure your website runs smoothly.</p>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-amber-400 text-gray-900 text-center py-4 mt-auto shadow-inner">
+    <p>&copy; 2025 My Website. All rights reserved.</p>
+  </footer>
+
+ <script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuBtn.addEventListener('click', () => {
+    const expanded = menuBtn.getAttribute('aria-expanded') === 'true';
+    menuBtn.setAttribute('aria-expanded', !expanded);
+    mobileMenu.classList.toggle('hidden');
+  });
+
+  // Dropdown for desktop "More"
+  const dropdownToggle = document.getElementById('desktop-dropdown-toggle');
+  const dropdownMenu = document.getElementById('desktop-dropdown-menu');
+
+  dropdownToggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    dropdownMenu.classList.toggle('hidden');
+  });
+
+ 
+  document.addEventListener('click', (e) => {
+    if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+      dropdownMenu.classList.add('hidden');
+    }
+  });
+</script>
+
+
+
+</body>
+</html>
